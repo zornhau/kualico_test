@@ -1,7 +1,35 @@
 package com.kualico.test;
 
-public class ElevatorController {
+import java.util.HashMap;
+import com.kualico.test.Elevator;
 
+public class ElevatorController {
+	
+	private HashMap map = new HashMap();
+
+	@SuppressWarnings("unused")
+	private void createElevators(Long count) {
+		//using the value in count, populate the map of elevators with (count) number of elevators
+		for (int i=0; i < count; i--) {
+			if(count < 1) {
+				break;
+			}
+		map.put(count, (new Elevator());
+		}
+	}
+	
+	
+	
+	private void run() {
+		for (;;){
+			//getInput() // this is the button press that will likely need to come from a UI somewhere
+			//doRules()
+			//sendElevator()
+		}
+		
+			
+		
+	}
 }
 
 /*
