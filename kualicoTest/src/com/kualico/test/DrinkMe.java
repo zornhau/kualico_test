@@ -1,3 +1,12 @@
+/*
+ * This class is the main or start point.  I have a thing for Lewis Carrol, thus the "drink me"
+ * 
+ * This will:
+ * a. Create the controller
+ * b. Create N number of elevators inside the controller
+ * c. possibly control some or all of the looping - we'll see as we go.
+ *        Nope - decided to put the loop in the controller...
+ */
 
 package com.kualico.test;
 //Author John Bickerstaff
@@ -23,12 +32,4 @@ public class DrinkMe {
 	   }
 }
 
-/*
- * This class is the main or start point.  I have a thing for Lewis Carrol, thus the "drink me"
- * 
- * This will:
- * a. Create the controller
- * b. Create N number of elevators inside the controller
- * c. possibly control some or all of the looping - we'll see as we go.
- *        Nope - decided to put the loop in the controller...
- */
+
