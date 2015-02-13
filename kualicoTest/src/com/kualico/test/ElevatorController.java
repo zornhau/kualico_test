@@ -8,23 +8,24 @@ public class ElevatorController {
 	private HashMap map = new HashMap();
 
 	@SuppressWarnings("unused")
-	private void createElevators(Long count) {
+	void createElevators(Long count) {
 		//using the value in count, populate the map of elevators with (count) number of elevators
 		for (int i=0; i < count; i--) {
 			if(count < 1) {
 				break;
 			}
-		map.put(count, (new Elevator());
+		map.put(count, (new Elevator(this)));
+		
 		}
 	}
 	
 	
 	
-	private void run() {
+	void run() {
 		for (;;){
 			//getInput() // this is the button press that will likely need to come from a UI somewhere
 			//doRules()
-			//sendElevator()
+			//sendElevator(hashmap reference)
 		}
 		
 			

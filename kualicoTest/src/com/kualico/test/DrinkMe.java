@@ -1,8 +1,9 @@
-import com.kualico.test.ElevatorController;
-import com.kualico.test.Elevator;
 
 package com.kualico.test;
 //Author John Bickerstaff
+
+import com.kualico.test.ElevatorController;
+import com.kualico.test.Elevator;
 
 /*
  * PLEASE NOTE:
@@ -12,11 +13,12 @@ package com.kualico.test;
  */
 public class DrinkMe {
 	public static void main(String[] args) { 
-	      System.out.println("Hello, I'm a placeholder for the KualiCo test");
-	      
 	      //Create an ElevatorController
-	      ElevatorController c = new ElevatorController();
-	      //c.createElevators(5);
+	      ElevatorController c = new ElevatorController(); // ONLY ONE TO BE CREATED - later make it a singleton if it matters
+	      // Make "n" number of elevators inside the controller.  yes, it could have come in on the args
+	      c.createElevators(5L);
+	      //start the simulation inside the controller
+	      c.run();
 	      
 	   }
 }
