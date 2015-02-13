@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.kualico.test.DrinkMeToStart&apos; to &apos;DrinkMe&apos;&#x0A;- Original project: &apos;kualicoTest&apos;&#x0A;- Original element: &apos;com.kualico.test.DrinkMeToStart&apos;&#x0A;- Renamed element: &apos;com.kualico.test.DrinkMe&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DrinkMeToStart&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.kualico.test{DrinkMeToStart.java[DrinkMeToStart" matchStrategy="1" name="DrinkMe" qualified="false" references="true" similarDeclarations="false" stamp="1423777794506" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,218 @@
+!SESSION 2015-02-12 12:54:37.660 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Framework arguments:  -keyring /Users/jb/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws carbon -arch x86 -keyring /Users/jb/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-02-12 12:55:15.939
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.maven.ide.eclipse 4 0 2015-02-12 12:55:16.311
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error updateing index
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:499)
+	at org.maven.ide.eclipse.index.IndexManager$UpdateCommand.run(IndexManager.java:415)
+	at org.maven.ide.eclipse.index.IndexManager$IndexUpdaterJob.run(IndexManager.java:532)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:243)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:87)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:169)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:63)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:489)
+	... 3 more
+!SUBENTRY 1 org.maven.ide.eclipse 4 -1 2015-02-12 12:55:16.313
+!MESSAGE Error updateing index
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:243)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:87)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:169)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:63)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:489)
+	at org.maven.ide.eclipse.index.IndexManager$UpdateCommand.run(IndexManager.java:415)
+	at org.maven.ide.eclipse.index.IndexManager$IndexUpdaterJob.run(IndexManager.java:532)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-02-12 12:58:16.218
+!MESSAGE Unable to get nature of project 'com.kualico.test'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/com.kualico.test' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:317)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:113)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:489)
+	at com.android.ide.eclipse.adt.internal.project.FolderDecorator.decorate(Unknown Source)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:356)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:338)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:374)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:334)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2015-02-12 12:58:16.218
+!MESSAGE Resource '/com.kualico.test' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-02-12 12:58:16.219
+!MESSAGE Unable to get nature of project 'com.kualico.test'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/com.kualico.test' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:317)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:113)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:489)
+	at com.android.ide.eclipse.adt.internal.project.FolderDecorator.decorate(Unknown Source)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:356)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:338)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:374)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:334)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2015-02-12 12:58:16.219
+!MESSAGE Resource '/com.kualico.test' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-02-12 12:58:16.220
+!MESSAGE Unable to get nature of project 'com.kualico.test'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/com.kualico.test' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:317)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:113)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:489)
+	at com.android.ide.eclipse.adt.internal.project.FolderDecorator.decorate(Unknown Source)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:356)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:338)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:374)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:334)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2015-02-12 12:58:16.220
+!MESSAGE Resource '/com.kualico.test' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-02-12 12:58:16.221
+!MESSAGE Unable to get nature of project 'com.kualico.test'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/com.kualico.test' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:317)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:113)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:489)
+	at com.android.ide.eclipse.adt.internal.project.FolderDecorator.decorate(Unknown Source)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:356)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:338)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:374)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:334)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2015-02-12 12:58:16.221
+!MESSAGE Resource '/com.kualico.test' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-02-12 12:58:16.222
+!MESSAGE Unable to get nature of project 'com.kualico.test'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/com.kualico.test' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:317)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:113)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:489)
+	at com.android.ide.eclipse.adt.internal.project.FolderDecorator.decorate(Unknown Source)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:356)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:338)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:374)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:334)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2015-02-12 12:58:16.222
+!MESSAGE Resource '/com.kualico.test' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-02-12 12:58:16.223
+!MESSAGE Unable to get nature of project 'com.kualico.test'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/com.kualico.test' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:317)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:113)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:489)
+	at com.android.ide.eclipse.adt.internal.project.FolderDecorator.decorate(Unknown Source)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:356)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:338)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:374)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:334)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2015-02-12 12:58:16.223
+!MESSAGE Resource '/com.kualico.test' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-02-12 12:58:16.223
+!MESSAGE Unable to get nature of project 'com.kualico.test'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/com.kualico.test' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:317)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:113)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:489)
+	at com.android.ide.eclipse.adt.internal.project.FolderDecorator.decorate(Unknown Source)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:356)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:338)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:374)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:334)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2015-02-12 12:58:16.224
+!MESSAGE Resource '/com.kualico.test' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-02-12 12:58:16.224
+!MESSAGE Unable to get nature of project 'com.kualico.test'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/com.kualico.test' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:317)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:113)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:489)
+	at com.android.ide.eclipse.adt.internal.project.FolderDecorator.decorate(Unknown Source)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:356)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:338)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:374)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:334)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2015-02-12 12:58:16.224
+!MESSAGE Resource '/com.kualico.test' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-02-12 12:58:16.225
+!MESSAGE Unable to get nature of project 'com.kualico.test'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/com.kualico.test' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:317)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:113)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:489)
+	at com.android.ide.eclipse.adt.internal.project.FolderDecorator.decorate(Unknown Source)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:356)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:338)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:374)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:334)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2015-02-12 12:58:16.225
+!MESSAGE Resource '/com.kualico.test' does not exist.

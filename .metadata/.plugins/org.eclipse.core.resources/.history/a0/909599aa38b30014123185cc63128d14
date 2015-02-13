@@ -1,0 +1,29 @@
+package com.kualico.test;
+
+public class ElevatorController {
+
+	@SuppressWarnings("unused")
+	private void createElevators(Long count) {
+		//using the value in count, populate the map of elevators with (count) number of elevators
+	}
+	
+	private void run() {
+		for (;;){
+			//getInput() // this is the button press that will likely need to come from a UI somewhere
+			//doRules()
+			//sendElevator()
+		}
+		
+			
+		
+	}
+}
+
+/*
+* This class is the Elevator Controller
+* 
+* This will:
+* a. Contain a map of Elevators
+* b. Receive button pushes requesting elevators
+* c. Find the most appropriate elevator to send in response to the button push
+*/
