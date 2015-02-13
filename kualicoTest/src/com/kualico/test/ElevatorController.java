@@ -14,7 +14,7 @@ import com.kualico.test.Elevator;
 
 public class ElevatorController {
 	
-	private HashMap map = new HashMap();
+	private HashMap elevatorMap = new HashMap();
 	
 	// consider a HashMap for each possible elevator state
 	// key = elevator number, value = state (door opened)
@@ -25,6 +25,9 @@ public class ElevatorController {
 	// This is interesting from the perspective that the controller can now ask specific questions
 	//about specific states and get the answer quickly.  This is probably useful for splitting out
 	// into services or whatever in a much more complex example...
+	private HashMap doorOpenCLosedMap = new HashMap();
+	private HashMap floorIAmOnMap = new HashMap(); // obviously, if I'm on a floor, I'd darn well better not be moving!
+	private HashMap movingStoppedMap = new HashMap(); //can probably use Booleans and be true for one and false for the other
 
 	@SuppressWarnings("unused")
 	void createElevators(Long count) {
@@ -33,7 +36,7 @@ public class ElevatorController {
 			if(count < 1) {
 				break;
 			}
-		map.put(count, (new Elevator(this)));
+			elevatorMap.put(count, (new Elevator(this)));
 		
 		}
 	}
@@ -48,13 +51,23 @@ public class ElevatorController {
 		}		
 	}
 	
-	void updateElevatorState(Long elevatorNumber, HashMap states) {
-		//if we go this way - pump the values from the elevator
-		//states into the separate HashMaps.
-		//Alternatively, have a separate method for each one.
+	void updateDoorState(Long elevatorNumber, Boolean doorState) {
+		doorOpenCLosedMap.put(elevatorNumber, doorState);
+		
+		//Alternatively, have a separate method for each state.
 		//probably faster and more efficient and more easily split later on...
 		//Yes - door #2 - have a method for each state that only updates one HashMap
 		//updateDoorState(Long elevatorNumber, Boolean open) {}
+	}
+	
+	void updateFloorState(Long elevatorNumber, Boolean floorState) {
+		
+	}//... and so on...
+	
+	void push(Long floor) {
+		//isAnyElevatorThere
+		//IsAnyElevatorCloseAndStopped
+		//IsAnyElevatorMovingTheRightWay
 	}
 }
 

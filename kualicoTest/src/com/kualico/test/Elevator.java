@@ -15,6 +15,9 @@ import com.kualico.test.ElevatorController;
 
 public class Elevator {
 	private ElevatorController ev;
+	private Long floorsPassed;
+	private Boolean inMaintenanceMode;
+	private Long numberOfTrips;
 	
 	/*
 	 * This constructor is called by the ElevatorController
@@ -37,7 +40,8 @@ public class Elevator {
 	   if so, controller will need to keep another list of some sort of elevators that should NOT be called
 	   This may be overkill because each elevator can know and be asked if it's "dead" and the controller can just move on.
 	 */
-	//call ev.updateDoorState(Long elevatorNumber, Boolean open) {} and so on here...
+	
+	//ev.updateDoorState(Long elevatorNumber, Boolean open) {} and so on here...
 
 }
 
